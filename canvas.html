@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drawing Board</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/shape.js"></script>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="canvas-box">
+        <div class="title">
+        <div class="title-box">
+            <div class="first">
+                <a>操作</a>
+                <ul class="two">
+                    <li class="new" role="news">新建</li>
+                    <li class="save" role="save">保存</li>
+                    <li class="cancel" role="cancel">撤销</li>
+                    <li class="choose" role="choose">选择</li>
+                </ul>
+            </div>
+            <div class="first">
+                <a>画图&nbsp;<input type="number" min="3" max="10" style="width:50px;" class="num" value="5"></a>
+                <ul class="two shapes">
+                    <li role="line">直线</li>
+                    <li role="rect">矩形</li>
+                    <li role="arc">圆形</li>
+                    <li role="triangle">三角形</li>
+                    <li role="polygon">多边形</li>
+                    <li role="stars">星形</li>
+                    <li role="pencil" class="pencil">铅笔</li>
+                </ul>
+            </div>
+            <div class="first">
+                <a>类型</a>
+                <div class="two styles">
+                    <div role="fill">填充</div>
+                    <div role="stroke">描边</div>
+                </div>
+            </div>
+            <div class="first">
+                <a>线条宽度 <input type="number" min="1" max="10" style="width:50px;" class="widths" value="1"></a>
+
+            </div>
+            <div class="first">
+                <a role="style">颜色 <input type="color" class="colors"></a>
+            </div>
+            <div class="first">
+                <li class="er" role="xp">橡皮擦</li>
+                <div class="two sizes">
+                    <div role="bold" widths="100">粗</div>
+                    <div role="normal" widths="60">中</div>
+                    <div role="small" widths="30">细</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <canvas width="1200" height="600"></canvas>
+        <div class="eraser"></div>
+        <div class="selects"></div>
+        <div class="shade"></div>
+    </div>
+</body>
+</html>
